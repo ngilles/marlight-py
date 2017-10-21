@@ -9,7 +9,7 @@ def readme():
 
 setup(
         name='marlight',
-        version='0.0.1',
+        version='0.0.1.post1',
         description='Marglight RGBW control through ethernet bridge',
         long_description=readme(),
         author='Nicolas Gilles',
@@ -18,10 +18,11 @@ setup(
         classifiers=[
             'Development Status :: 3 - Alpha',
             'Intended Audience :: Developers',
-            'OSI Approved :: BSD License',
+            'License :: OSI Approved :: BSD License',
             'Operating System :: OS Independent',
         ],
 
+        package_dir={'':'src'},
         packages=find_packages('src'),
-        package_dir={'':'src'}
+        py_modules=['marlight']
 )
